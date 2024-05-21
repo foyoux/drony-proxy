@@ -1,2 +1,2 @@
 # drony-proxy
-drony-proxy 中文版
+drony-proxy app 中文版
