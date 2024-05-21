@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_dns_list_items">
+        <item>StevenBlack Unified hosts = (adware + malware)</item>
+        <item>"StevenBlack Unified hosts + gambling (gioco d'azzardo)"</item>
+    </string-array>
+    <string-array name="add_filter_rule_actions">
+        <item>Nega</item>
+        <item>Consenti</item>
+        <item>Direziona</item>
+        <item>Catene di proxy locale</item>
+    </string-array>
+    <string-array name="add_filter_rule_apps">
+        <item>Tutte le applicazioni</item>
+    </string-array>
+    <string-array name="add_filter_rule_nets">
+        <item>Tutte le reti</item>
+    </string-array>
+    <string-array name="add_local_proxy_apps">
+        <item></item>
+    </string-array>
+    <string-array name="add_local_proxy_types">
+        <item>http</item>
+        <item>SOCKS</item>
+    </string-array>
+    <string-array name="chain_proxy_types_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="credentials_auth_types">
+        <item>Basic</item>
+        <item>Digest</item>
+        <item>Windows(NTLM)</item>
+    </string-array>
+    <string-array name="dns_crypt_resolvers">
+        <item>Personalizzato</item>
+    </string-array>
+    <string-array name="filter_default_rule_types">
+        <item>Consenti tutto</item>
+        <item>Nega tutto</item>
+        <item>Direziona tutto</item>
+        <item>Tutte le catene di Proxy locale</item>
+        <item>Solo app attive</item>
+    </string-array>
+    <string-array name="filter_default_rule_values">
+        <item>ALLOW_ALL</item>
+        <item>DENY_ALL</item>
+        <item>DIRECT_ALL</item>
+        <item>LOCAL_PROXY_CHAIN_ALL</item>
+        <item>ONLY_ACTIVE_APP</item>
+    </string-array>
+    <string-array name="network_proxy_types_entries">
+        <item>Nessuno</item>
+        <item>Manuale</item>
+        <item>Script</item>
+    </string-array>
+    <string-array name="shadowsocks_chipers">
+        <item>Personalizzato</item>
+    </string-array>
+    <string-array name="shadowsocks_routes_types_selection">
+        <item>Tutto</item>
+        <item>bypass-china</item>
+        <item>bypass-lan</item>
+        <item>bypass-lan-china</item>
+        <item>lista gfwl</item>
+    </string-array>
+    <string-array name="socks_proxy_namespace_values">
+        <item>Nessuno</item>
+    </string-array>
+    <string-array name="socks_proxy_type_namespaces">
+        <item>Nessuno</item>
+    </string-array>
+</resources>

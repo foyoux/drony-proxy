@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/card_view" android:focusable="true" android:layout_height="@dimen/sku_details_row_header_height" app:cardBackgroundColor="@color/row_header_bg_color" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sku_details_row_text_size" android:gravity="start|center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fontFamily="sans-serif-medium" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar android:id="@id/yourCircularProgressbar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" app:cpb_background_progressbar_color="@color/colorPrimary" app:cpb_background_progressbar_width="25.0dip" app:cpb_progressbar_color="@android:color/white" app:cpb_progressbar_width="15.0dip" />
+    <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/adRewardsStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ads_rewards_00_100" android:layout_centerInParent="true" android:textAllCaps="false" app:fontFamily="monospace" />
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/adRewardsInstructions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ads_reward_wait_to_get_reward" android:layout_below="@id/adRewardsStatus" android:layout_centerHorizontal="true" app:fontFamily="sans-serif-smallcaps" />
+</RelativeLayout>

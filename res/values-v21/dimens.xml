@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_content_margin_start">0.0dip</dimen>
+    <dimen name="notification_main_column_padding_top">0.0dip</dimen>
+    <dimen name="notification_media_narrow_margin">12.0dip</dimen>
+    <dimen name="preference_dropdown_padding_start">72.0dip</dimen>
+    <dimen name="floating_action_button_margin_mini">20.0dip</dimen>
+    <dimen name="floating_action_button_margin_mini_minus">-20.0dip</dimen>
+    <dimen name="floating_action_button_margin_normal">28.0dip</dimen>
+    <dimen name="floating_action_button_margin_normal_minus">-28.0dip</dimen>
+</resources>

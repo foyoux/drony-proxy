@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/list_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/billing_loading_indicator" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/error_textview" android:padding="@dimen/single_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

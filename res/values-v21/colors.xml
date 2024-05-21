@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_action_color_filter">@color/secondary_text_default_material_light</color>
+    <color name="notification_color_mask">#dd000000</color>
+    <color name="gold">#ffffbf00</color>
+</resources>

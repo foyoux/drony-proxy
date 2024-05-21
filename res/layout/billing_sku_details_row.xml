@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/card_view" android:layout_height="@dimen/sku_details_row_height" app:cardBackgroundColor="@color/row_bg_color" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="?selectableItemBackground" android:padding="@dimen/sku_details_row_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sku_details_row_text_size" android:textStyle="bold" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/sku_details_row_text_size" android:textStyle="bold" android:textColor="@color/ascent_color" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/single_padding" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/single_padding">
+            <ImageView android:gravity="start" android:id="@id/sku_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="icon" />
+            <TextView android:textSize="@dimen/sku_details_row_description_text_size" android:id="@id/description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/single_padding" android:layout_weight="1.0" />
+        </LinearLayout>
+        <Button android:id="@id/state_button" android:layout_marginTop="@dimen/single_padding" android:contentDescription="@string/billing_button_buy" style="@style/ButtonStyle" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

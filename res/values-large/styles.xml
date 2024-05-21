@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppActivityTheme" parent="@style/AppActivityBaseTheme">
+        <item name="listPreferredItemPaddingLeft_">0.0dip</item>
+        <item name="listPreferredItemPaddingRight_">0.0dip</item>
+    </style>
+    <style name="AppBaseDarkTheme" parent="@style/AppBaseDarkLargeTheme">
+        <item name="listContentHeader">?android:listSeparatorTextViewStyle</item>
+        <item name="listHeaderTextColor">@null</item>
+    </style>
+    <style name="AppBaseTheme" parent="@style/AppBaseLargeTheme">
+        <item name="listContentHeader">@style/ListContentHeader</item>
+        <item name="listHeaderTextColor">@color/holo_blue_dark</item>
+    </style>
+    <style name="AppDarkActivityTheme" parent="@style/AppDarkActivityBaseTheme">
+        <item name="listPreferredItemPaddingLeft_">0.0dip</item>
+        <item name="listPreferredItemPaddingRight_">0.0dip</item>
+    </style>
+    <style name="Base.Theme.AppCompat.DialogWhenLarge" parent="@style/Base.Theme.AppCompat.Dialog.FixedSize" />
+    <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="@style/Base.Theme.AppCompat.Light.Dialog.FixedSize" />
+    <style name="Base.Theme.MaterialComponents.DialogWhenLarge" parent="@style/Base.Theme.MaterialComponents.Dialog.FixedSize" />
+    <style name="Base.Theme.MaterialComponents.Light.DialogWhenLarge" parent="@style/Base.Theme.MaterialComponents.Light.Dialog.FixedSize" />
+    <style name="AppBaseDarkLargeTheme" parent="@style/AndroidDarkTheme">
+        <item name="listPreferredItemPaddingLeft_">?android:listPreferredItemPaddingLeft</item>
+        <item name="listPreferredItemPaddingRight_">?android:listPreferredItemPaddingRight</item>
+    </style>
+    <style name="AppBaseLargeTheme" parent="@style/AndroidTheme">
+        <item name="listPreferredItemPaddingLeft_">?android:listPreferredItemPaddingLeft</item>
+        <item name="listPreferredItemPaddingRight_">?android:listPreferredItemPaddingRight</item>
+    </style>
+    <style name="ListContentHeader" parent="@android:style/TextAppearance.Medium.Inverse">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/holo_blue_light</item>
+        <item name="android:padding">10.0dip</item>
+    </style>
+</resources>

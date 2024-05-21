@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroller_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:fillViewport="true" android:layout_above="@id/adView" android:layout_alignParentLeft="true" android:keepScreenOn="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="start" android:orientation="horizontal" android:id="@id/rl_add_dns_list_items_url" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/add_dns_list_items_url_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_dns_local_list_items_url_name" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:id="@id/add_dns_list_items_url_name_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/add_dns_list_items_url_name_hint" android:layout_toRightOf="@id/add_dns_list_items_url_name" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="start" android:orientation="horizontal" android:id="@id/rl_add_dns_list_items_url_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_add_dns_list_items_url">
+                <TextView android:id="@id/add_dns_list_items_url_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_dns_local_list_items_url_value" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:id="@id/add_dns_list_items_url_value_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/add_dns_local_list_items_url_value_hint" android:layout_toRightOf="@id/add_dns_list_items_url_value" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

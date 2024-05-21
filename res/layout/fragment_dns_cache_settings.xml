@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/textViewNetworkId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/networkid" android:layout_alignParentTop="true" style="?android:listSeparatorTextViewStyle" />
+    <RelativeLayout android:id="@id/dns_settings_relative_layout_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/textViewNetworkId">
+        <ScrollView android:id="@id/scrollSettings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/tvTextPort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/listening_port" />
+                    <EditText android:id="@id/editTextPort" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/enter_port_number" android:inputType="number" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/tvTextDnsServer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dns_server" />
+                    <EditText android:id="@id/editTextDnsServer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/dns_server_tcp_ip_or_empty" />
+                </LinearLayout>
+                <CheckBox android:id="@id/checkBoxUseTcp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:text="@string/use_only_tcp" />
+                <CheckBox android:id="@id/checkBoxLogging" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:text="@string/debug_messages_shown" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/toggleButtonOnOff" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <ToggleButton android:textAppearance="?android:textAppearanceLarge" android:id="@id/toggleButtonOnOff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textOn="@string/on_proxy" android:textOff="@string/off_proxy" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ScrollView android:id="@id/scroller_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:fillViewport="true" android:layout_above="@id/adView" android:layout_alignParentLeft="true" android:keepScreenOn="true">
+        <TextView android:id="@id/logView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </ScrollView>
+</RelativeLayout>

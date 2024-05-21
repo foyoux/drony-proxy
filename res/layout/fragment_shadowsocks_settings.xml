@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/textViewNetworkId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/networkid" android:layout_alignParentTop="true" style="?android:listSeparatorTextViewStyle" />
+    <RelativeLayout android:id="@id/shadowsocks_settings_relative_layout_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/textViewNetworkId">
+        <ScrollView android:id="@id/scrollSettings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/tvServerAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/serveraddress" />
+                    <EditText android:id="@id/editTextSeverAddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/enter_server_address" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/tvServerPort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/serverport" />
+                    <EditText android:id="@id/editTextSeverPort" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/enter_server_port" android:inputType="number" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/tvLocalPort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/localport" />
+                    <EditText android:id="@id/editTextLocalPort" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/enter_local_port" android:inputType="number" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/tvRouteType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/route_type" />
+                    <Spinner android:gravity="center" android:id="@id/spinnerRouteTypeSelection" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:prompt="@string/shadowsocks_routes_types_selection" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/tvTextChiper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chiper" />
+                    <Spinner android:gravity="center" android:id="@id/spinnerServerChipperSelection" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:prompt="@string/shadowsocks_chiper_select" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/tvServerDns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/server_dns_redirect" />
+                    <EditText android:id="@id/editTextSeverDns" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/_8_8_8_8_53" android:hint="@string/enter_server_dns" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/tvServerPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/server_password" />
+                    <EditText android:id="@id/editTextSeverPassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/enter_server_password" android:inputType="textPassword" />
+                </LinearLayout>
+                <CheckBox android:id="@id/checkBoxLogging" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:text="@string/debug_messages_shown" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

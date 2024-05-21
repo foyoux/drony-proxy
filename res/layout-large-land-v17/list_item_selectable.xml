@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?listItemSelectableLargeBackground" android:paddingLeft="?listPreferredItemPaddingLeft_" android:paddingRight="?listPreferredItemPaddingRight_" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:paddingStart="?listPreferredItemPaddingLeft_" android:paddingEnd="?listPreferredItemPaddingRight_"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?android:activatedBackgroundIndicator" android:layout_width="10.0dip" android:layout_height="fill_parent" style="?listItemSelectableLargeIndicatorStyle" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/list_item_base" />
+    </LinearLayout>
+</LinearLayout>

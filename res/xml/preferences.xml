@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/ads_title" app:iconSpaceReserved="false">
+        <PreferenceScreen android:title="@string/ads_free_title" android:key="@string/ads_free_title" app:iconSpaceReserved="false">
+            <intent android:targetPackage="org.sandroproxy.drony" android:action="android.intent.action.VIEW" android:data="@string/intent_data_tag_from_preferences" android:targetClass="org.sandroproxy.drony.MainBillingActivity" app:iconSpaceReserved="false" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/ad_rewards_edit_title" android:key="@string/activity_title_ad_rewards" app:iconSpaceReserved="false">
+            <intent android:targetPackage="org.sandroproxy.drony" android:action="android.intent.action.VIEW" android:data="@string/intent_data_tag_from_preferences" android:targetClass="org.sandroproxy.drony.AdsRewardsActivity" app:iconSpaceReserved="false" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_proxy_common_category" app:iconSpaceReserved="false">
+        <CheckBoxPreference android:title="@string/preferences_title_proxy_common_visible_outside_checkbox" android:key="@string/preferences_key_proxy_common_visible_outside_checkbox" android:summary="@string/preferences_summary_proxy_common_visible_outside_checkbox" app:iconSpaceReserved="false" />
+        <EditTextPreference android:hint="@string/preferences_hint_proxy_common_port_text" android:title="@string/preferences_title_proxy_common_port_text" android:key="@string/preferences_key_proxy_common_port_text" android:summary="@string/preferences_summary_proxy_common_port_text" android:defaultValue="@string/preferences_value_proxy_common_port_text" android:dialogTitle="@string/preferences_dialog_title_proxy_common_port_text" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_proxy_networks_category" app:iconSpaceReserved="false">
+        <PreferenceScreen android:title="@string/preferences_title_network_list" android:key="@string/preferences_key_network_list" app:iconSpaceReserved="false">
+            <intent android:targetPackage="org.sandroproxy.drony" android:action="android.intent.action.VIEW" android:data="@string/intent_data_tag_from_preferences" android:targetClass="org.sandroproxy.drony.NetworkListActivity" app:iconSpaceReserved="false" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/preferences_title_network_default_list" android:key="@string/preferences_key_network_default_list" app:iconSpaceReserved="false">
+            <intent android:targetPackage="org.sandroproxy.drony" android:action="android.intent.action.VIEW" android:data="@string/intent_data_tag_from_preferences" android:targetClass="org.sandroproxy.drony.NetworkDetailsActivity" app:iconSpaceReserved="false" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_filter_category" app:iconSpaceReserved="false">
+        <ListPreference android:entries="@array/filter_default_rule_types" android:title="@string/preferences_title_filter_default_rule" android:key="@string/preferences_key_filter_default_rule" android:summary="@string/preferences_default_value_filter_default_rule" android:defaultValue="@string/preferences_default_value_filter_default_rule" android:entryValues="@array/filter_default_rule_values" app:iconSpaceReserved="false" />
+        <PreferenceScreen android:title="@string/preferences_title_filter_rules_all" android:key="@string/preferences_key_filter_rules_all" android:summary="@string/preferences_summary_filter_rules_all" app:iconSpaceReserved="false">
+            <intent android:targetPackage="org.sandroproxy.drony" android:action="android.intent.action.VIEW" android:data="@string/intent_data_tag_from_preferences" android:targetClass="org.sandroproxy.drony.NetFilterActivity" app:iconSpaceReserved="false" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_dns_category" app:iconSpaceReserved="false">
+        <PreferenceScreen android:title="@string/preferences_title_dns_mappings_common" android:key="@string/preferences_key_dns_mappings_common" android:summary="@string/preferences_summary_dns_mappings_common" app:iconSpaceReserved="false">
+            <intent android:targetPackage="org.sandroproxy.drony" android:action="android.intent.action.VIEW" android:data="@string/intent_data_tag_from_preferences" android:targetClass="org.sandroproxy.drony.DnsLocalListSettingsActivity" app:iconSpaceReserved="false">
+                <extra android:name="networkId" android:value="@string/dns_mappings_common_network_id" />
+            </intent>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_proxy_credentials_category" app:iconSpaceReserved="false">
+        <CheckBoxPreference android:title="@string/preferences_title_proxy_common_persistence_flag_on_credentials_screen" android:key="@string/preferences_key_proxy_common_persistence_flag_on_credentials_screen" android:summary="@string/preferences_summary_proxy_common_persistence_flag_on_credentials_screen_on" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <CheckBoxPreference android:title="@string/preferences_title_proxy_common_persistence_flag_deafult_value" android:key="@string/preferences_key_proxy_common_persistence_flag_deafult_value" android:summary="@string/preferences_summary_proxy_common_persistence_flag_deafult_value_on" android:defaultValue="true" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

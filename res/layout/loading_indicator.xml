@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar android:layout_gravity="center" android:id="@id/billing_screen_wait" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:contentDescription="@string/content_description_app_loading_image" style="?android:progressBarStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

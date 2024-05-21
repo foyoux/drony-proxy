@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_dns_list_items">
+        <item>StevenBlack Unified hosts = (adware + malware)</item>
+        <item>StevenBlack Unified hosts + gambling</item>
+    </string-array>
+    <string-array name="add_filter_rule_actions">
+        <item>Blokiraj</item>
+        <item>Dovoli</item>
+        <item>Neposredno</item>
+        <item>Lokalna veriga proxijev</item>
+    </string-array>
+    <string-array name="add_filter_rule_apps">
+        <item>Vse aplikacije</item>
+    </string-array>
+    <string-array name="add_filter_rule_nets">
+        <item>Vsa omrežja</item>
+    </string-array>
+    <string-array name="add_local_proxy_apps">
+        <item></item>
+    </string-array>
+    <string-array name="add_local_proxy_types">
+        <item>http</item>
+        <item>SOCKS</item>
+    </string-array>
+    <string-array name="chain_proxy_types_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="credentials_auth_types">
+        <item>Basic</item>
+        <item>Digest</item>
+        <item>Windows(NTLM)</item>
+    </string-array>
+    <string-array name="dns_crypt_resolvers">
+        <item>Prirejeno</item>
+    </string-array>
+    <string-array name="filter_default_rule_types">
+        <item>Dovoli vse</item>
+        <item>Zavrni vse</item>
+        <item>Neposredno vse</item>
+        <item>Lokalna veriga proxijev vse</item>
+        <item>Samo aktivna aplikacija</item>
+    </string-array>
+    <string-array name="filter_default_rule_values">
+        <item>ALLOW_ALL</item>
+        <item>DENY_ALL</item>
+        <item>DIRECT_ALL</item>
+        <item>LOCAL_PROXY_CHAIN_ALL</item>
+        <item>ONLY_ACTIVE_APP</item>
+    </string-array>
+    <string-array name="network_proxy_types_entries">
+        <item>Brez</item>
+        <item>Ročno</item>
+        <item>Skripta</item>
+    </string-array>
+    <string-array name="shadowsocks_chipers">
+        <item>Prirejeno</item>
+    </string-array>
+    <string-array name="shadowsocks_routes_types_selection">
+        <item>Vse</item>
+        <item>obidi-china</item>
+        <item>obidi-lan</item>
+        <item>obidi-lan-china</item>
+        <item>gfwlist</item>
+    </string-array>
+    <string-array name="socks_proxy_namespace_values">
+        <item>Brez</item>
+    </string-array>
+    <string-array name="socks_proxy_type_namespaces">
+        <item>Brez</item>
+    </string-array>
+</resources>

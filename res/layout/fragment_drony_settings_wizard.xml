@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+    <Button android:id="@id/wizardOkButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ok" android:layout_alignParentBottom="true" />
+    <ScrollView android:id="@id/wizardScrollerVertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:fillViewport="true" android:layout_above="@id/wizardOkButton" android:keepScreenOn="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/wizardNetworkIdLabel" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/network_id" />
+            <Spinner android:id="@id/wizdardNetworkId" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/wizardNetworkIdLabel" />
+            <TextView android:id="@id/wizardProxyTypeLabel" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/proxy_type" android:layout_below="@id/wizdardNetworkId" />
+            <Spinner android:id="@id/wizdardProxyType" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/wizardProxyTypeLabel" />
+            <RelativeLayout android:id="@id/wizdardProxyTypeManual" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/wizdardProxyType">
+                <TextView android:id="@id/manualServerNameLabel" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hostname" />
+                <EditText android:id="@id/manualServerName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/manual_server_name" android:layout_below="@id/manualServerNameLabel" />
+                <TextView android:id="@id/manualPortLabel" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/port" android:layout_below="@id/manualServerName" />
+                <EditText android:id="@id/manualPort" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/manual_server_port" android:layout_below="@id/manualPortLabel" android:inputType="number" />
+                <TextView android:id="@id/manualUsernameLabel" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/username" android:layout_below="@id/manualPort" />
+                <EditText android:id="@id/manualUsername" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/manual_username" android:layout_below="@id/manualUsernameLabel" />
+                <TextView android:id="@id/manualPasswordLabel" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/password" android:layout_below="@id/manualUsername" />
+                <EditText android:id="@id/manualPassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/manual_password" android:layout_below="@id/manualPasswordLabel" android:inputType="textPassword" />
+                <TextView android:id="@id/manualDomainLabel" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/domain_or_realm" android:layout_below="@id/manualPassword" />
+                <EditText android:id="@id/manualDomain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/manual_domain_realm" android:layout_below="@id/manualDomainLabel" />
+                <TextView android:id="@id/manualWorkstationLabel" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/workstation_name" android:layout_below="@id/manualDomain" />
+                <EditText android:id="@id/manualWorkstation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/manual_workstation" android:layout_below="@id/manualWorkstationLabel" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/wizdardProxyTypeScript" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/wizdardProxyType">
+                <TextView android:id="@id/scriptUrlLabel" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wpad_pac_script_url" />
+                <EditText android:id="@id/scriptUrl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/script_url" android:layout_below="@id/scriptUrlLabel" />
+                <TextView android:id="@id/scriptCacheTimeoutLabel" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/script_cache_timeout" android:layout_below="@id/scriptUrl" />
+                <EditText android:id="@id/scriptCacheTimeout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/script_cache_timeout_2" android:layout_below="@id/scriptCacheTimeoutLabel" android:inputType="number" />
+                <TextView android:id="@id/scriptFetchIntervalLabel" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/script_fetch_interval" android:layout_below="@id/scriptCacheTimeout" />
+                <EditText android:id="@id/scriptFetchInterval" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/script_fetch_timeout" android:layout_below="@id/scriptFetchIntervalLabel" android:inputType="number" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroller_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:fillViewport="true" android:layout_above="@id/adView" android:layout_alignParentLeft="true" android:keepScreenOn="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="start" android:orientation="horizontal" android:id="@id/rl_add_local_proxy_enabled" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/add_add_local_proxy_enabled_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_add_local_proxy_enabled_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <CheckBox android:gravity="right" android:id="@id/add_local_proxy_enabled_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/rl_add_local_proxy_app" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_add_local_proxy_enabled">
+                <TextView android:id="@id/add_local_proxy_app_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_local_proxy_app_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <Spinner android:entries="@array/add_local_proxy_apps" android:id="@id/add_local_proxy_app_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/add_local_proxy_app_spinner_prompt" android:layout_toRightOf="@id/add_local_proxy_app_text" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/rl_add_local_proxy_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_add_local_proxy_app">
+                <TextView android:id="@id/add_local_proxy_type_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_local_proxy_type_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <Spinner android:entries="@array/add_local_proxy_types" android:id="@id/add_local_proxy_type_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/add_local_proxy_type_spinner_prompt" android:layout_toRightOf="@id/add_local_proxy_type_text" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="start" android:orientation="horizontal" android:id="@id/rl_add_local_proxy_port" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_add_local_proxy_type">
+                <TextView android:id="@id/add_local_proxy_port_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_local_proxy_port_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:id="@id/add_local_proxy_port_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/add_local_proxy_port_hint" android:layout_toRightOf="@id/add_local_proxy_port_text" android:layout_alignParentRight="true" android:inputType="number" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="start" android:orientation="horizontal" android:id="@id/rl_add_local_proxy_dns_enable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_add_local_proxy_port">
+                <TextView android:id="@id/add_add_local_proxy_dns_enable_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_add_local_proxy_dns_enable_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <CheckBox android:gravity="right" android:id="@id/add_local_proxy_dns_enable_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="start" android:orientation="horizontal" android:id="@id/rl_add_local_proxy_dns_port" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_add_local_proxy_dns_enable">
+                <TextView android:id="@id/add_local_proxy_dns_port_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_local_proxy_dns_port_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:id="@id/add_local_proxy_dns_port_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/add_local_proxy_dns_port_hint" android:layout_toRightOf="@id/add_local_proxy_dns_port_text" android:layout_alignParentRight="true" android:inputType="number" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroller_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:fillViewport="true" android:layout_above="@id/adView" android:layout_alignParentLeft="true" android:keepScreenOn="true" android:layout_alignParentStart="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="start" android:orientation="horizontal" android:id="@id/rl_add_dns_list_item_hostname" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/add_dns_list_item_hostname_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_dns_local_list_hostname_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                <EditText android:id="@id/add_dns_list_item_hostname_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/add_dns_list_item_hostname_hint" android:layout_toRightOf="@id/add_dns_list_item_hostname_text" android:layout_alignParentRight="true" android:layout_toEndOf="@id/add_dns_list_item_hostname_text" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="start" android:orientation="horizontal" android:id="@id/rl_add_dns_list_item_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_add_dns_list_item_hostname">
+                <TextView android:id="@id/add_dns_list_item_address_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_dns_local_list_address_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                <EditText android:id="@id/add_dns_list_item_address_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/add_dns_list_item_address_hint" android:layout_toRightOf="@id/add_dns_list_item_address_text" android:layout_alignParentRight="true" android:layout_toEndOf="@id/add_dns_list_item_address_text" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>
